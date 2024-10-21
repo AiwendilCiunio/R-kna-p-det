@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="root">
+        <input type="text" id="firstNumberField">
+        <!--<div class="dropdown">
+            <button class="dropbtn">Choose</button>
+            <div class="dropdown-content">
+                <p class="item-menu">+</p>
+                <p class="item-menu">-</p>
+                <p class="item-menu">*</p>
+                <p class="item-menu">/</p>
+            </div>
+        </div>-->
+        <div>
+            <label for="dropdownMenu">Choose:</label>
+            <select name="dropdownMenu" id="dropdownMenu">
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="*">*</option>
+              <option value="/">/</option>
+            </select>
+        </div>
+        <input type="text" id="secondNumberField">
+        <button id="calculateButton">Calculate!</button>
+        <br>
+        <label for="resultField">Result: </label>
+        <br>
+        <textarea name="resultField" id="resultField" disabled></textarea>
+    </div>
+</body>
+</html>
